@@ -1,0 +1,15 @@
+html
+  head
+    title Polls
+  body
+    h1 Polls
+    form(action="/polls", method="post")
+      div
+      p Ingresa un titulo para tu encuesta
+      input(type="text" name="pollTitle")
+      p Ingresa la descripcion de tu encuesta
+      textarea(name="pollDesc", cols="30", rows="10")
+      br
+      input(type="submit", value="Crear encuesta")
+      
+      

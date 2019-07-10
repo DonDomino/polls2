@@ -1,0 +1,13 @@
+html
+  head
+    title Polls
+  body
+    h1 Polls
+    a(href='polls/new') Crea una nueva encuesta
+    each poll in polls
+      div
+        h2 #{poll.title}
+        h3 Creada por #{poll.author.name}
+        p #{poll.description}
+        - let url = poll._id
+        a(href='polls/'+url) Elimina esta encuesta
